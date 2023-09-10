@@ -3,15 +3,15 @@ const http = require('http')
 const server = http.createServer((req, res) => {
   if(req.url === '/'){
 
-    res.write('welcome home sweet home alabama.')
+    res.write('intro')
     res.end() 
   }
   else if(req.url === '/about'){
-    res.write('welcome home sweet home about page.')
+    res.write('very cool looking about page')
     res.end()
   }
   else if(req.url === '/features'){
-    res.write('alabama features here')
+    res.write('features here')
     res.end()
   }
   else{
